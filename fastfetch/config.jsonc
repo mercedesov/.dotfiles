@@ -1,0 +1,59 @@
+{  "color": false,
+    "bold": false,
+
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/lain2.txt",
+    "padding": {
+      "right": 4
+    }
+  },
+
+  "modules": [
+
+
+
+{
+  "type": "title",
+  "format": "\u001b[36mlayer 07\u001b[0m"
+},
+
+
+
+
+    {
+      "type": "command",
+      "key": "PRESENT DAY",
+      "text": "date '+%a %b %d %Y'"
+    },
+    {
+      "type": "command",
+      "key": "PRESENT TIME",
+      "text": "date '+%H:%M:%S'"
+    },
+    {
+      "type": "command",
+      "key": "Packages",
+      "text": "pacman -Qq | wc -l"
+    },
+
+    "os",
+    "kernel",
+    "shell",
+    "terminal",
+    "cpu",
+    "memory",
+    "disk",
+    "uptime",
+    {
+      "type": "command",
+      "key": "Battery",
+      "text": "cat /sys/class/power_supply/macsmc-battery/capacity | tr -d '\\n'"
+    },
+
+{ "type": "custom", "format": "\u001b[36mlain lain lain lain lain lain lain lain lain\u001b[0m" },
+{ "type": "custom", "format": "\u001b[36mlain lain lain lain lain lain lain lain lain\u001b[0m" },
+{ "type": "custom", "format": "\u001b[36mlain lain lain lain lain lain lain lain lain\u001b[0m" },
+{ "type": "custom", "format": "\u001b[36mlain lain lain lain lain lain lain lain lain\u001b[0m" }
+  ]
+}
